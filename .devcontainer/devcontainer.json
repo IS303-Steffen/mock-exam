@@ -1,0 +1,27 @@
+{
+  "name": "IS303 Exam Container",
+  "image": "ghcr.io/is303-steffen/is303-python-jupyter:3.12",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter"
+      ],
+      "settings": {
+        "settingsSync.enable": false,
+        "workbench.colorTheme": "Default Dark Modern",
+        "workbench.list.openMode": "singleClick",
+        "workbench.editor.enablePreview": true,
+        "python.defaultInterpreterPath": "/usr/local/bin/python3",
+        "chat.disableAIFeatures": true,
+        "extensions.allowed": {
+          "ms-python.python": true,
+          "ms-toolsai.jupyter": true,
+          "ms-python.vscode-pylance": true,
+          "ms-python.debugpy": true
+        }
+      }
+    }
+  },
+  "remoteUser": "vscode"
+}
